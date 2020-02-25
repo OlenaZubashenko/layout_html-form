@@ -10,70 +10,72 @@
 </head>
 <body>
   <form method="post" action="https://mate.academy/ru">
-    <fieldset>
+    <fieldset class="form-wrapper">
       <legend>Personal information</legend>
       <div class="surname">
-        <label>Surname:
-          <input id="surname" type="text" name="surname" value="" required>
+        <label class = "label" >Surname:
+          <input id="surname" type="text" name="surname" required>
         </label>
       </div>
       <div class="name">
-        <label>Name:
-          <input id="name" type="text" value="" name="name" required>
+        <label class = "label">Name:
+          <input id="name" type="text" name="name" required>
         </label>
       </div>
       <div class="age">
-        <label>How old are You?
+        <label class = "label">How old are You?
           <input id="age" min="0" max="90" type="number" name="age" value="12 " placeholder="12" step="1" data-qa="field-value">
         </label>
       </div>
       <div class="date">
-        <label>Full date of birth:
-          <input id="date" type="date" name="date" value="">
+        <label class = "label">Full date of birth:
+          <input id="date" type="date" name="date" >
         </label>
       </div>
       <div class="agree">
-        <label>I accept the term of the agreement
+        <label class = "label">I accept the term of the agreement
           <input id="agree" type="checkbox" name="agree">
         </label>
       </div>
     </fieldset>
-    <fieldset>
+    <fieldset class="form-wrapper">
       <legend>Registration</legend>
       <div class="e-mail">
-        <label>E-mail:
-          <input id="e-mail" type="email" name="e-mail" value="" placeholder="email@example.com"
+        <label class = "label">E-mail:
+          <input id="e-mail" type="email" name="e-mail" placeholder="email@example.com"
             data-qa="field-placeholder">
         </label>
       </div>
       <div class="password">
-        <label>Password:
-          <input id="password" type="password" name="password" value="" required>
+        <label class = "label">Password:
+          <input id="password" type="password" name="password" required>
         </label>
       </div>
     </fieldset>
-    <fieldset>
+    <fieldset class="form-wrapper">
       <legend>An interesting fact about you!</legend>
       <div class="interesting">
-        <label>Do you love cats?
+        <label class = "label">Do you love cats?
           <input id="yes" type="radio" name="loveCats" value="yes">
           Yes
+        </label>
+      <label>
           <input id="no" type="radio" name="loveCats" value="no">
           No
         </label>
       </div>
       <div class="color">
-        <label>What is your favorite color?
-          <input id="color" type="color" name="color" value="">
+        <label class = "label">What is your favorite color?
+          <input id="color" type="color" name="color" >
         </label>
       </div>
       <div class="goToBed">
-        <label>What time do you go to bed?
-          <input id="time" type="time" name="time" value="">
+        <label class = "label">What time do you go to bed?
+          <input id="time" type="time" name="time" >
         </label>
       </div>
       <div class="breds">
-        <label>What are your favorite brends of cars?
+        <label class = "label">What are your favorite brends of cars?
           <select id="breds" size="4" name="breds">
             <option value="bmw">BMW</option>
             <option value="audi">Audi</option>
@@ -83,20 +85,20 @@
         </label>
       </div>
       <div class="workRate">
-        <label>How do you rate your work?
+        <label class = "label">How do you rate your work?
           <input id="workRate" type="range" name="workRate" value="0">
         </label>
       </div>
     </fieldset>
-    <fieldset>
+    <fieldset class="form-wrapper">
       <legend>Additional info:</legend>
       <div class="comments">
-        <label>Comments:
+        <label class = "label">Comments:
           <textarea id="comments" name="comments" minlength="10" maxlength="80"></textarea>
         </label>
       </div>
       <div class="recomendation">
-        <label>Would you recommend us?
+        <label class = "label">Would you recommend us?
           <select id="recomendation" name="recomendation">
             <option value="yes">yes</option>
             <option value="no">no</option>
